@@ -1,0 +1,46 @@
+.Navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+
+}
+
+.NavbarLeft {
+  display: flex;
+}
+
+.NavbarLeftContent {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+
+.NavbarRight {
+  display: flex;
+  align-items: center;
+}
+
+.NavbarRightBtn {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+  background: #FFDC5E;
+  border-radius: 30px;
+  margin-left: 30px;
+  border: none;
+  transition: background 0.2s ease, color 0.2s ease;
+  margin-bottom: 10px;
+}
+.NavbarTitle {
+  font-weight: 800;
+}
+.NavbarSubtitle {
+  color: #929292;
+
+}
+
