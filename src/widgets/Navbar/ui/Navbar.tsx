@@ -5,7 +5,7 @@ import Logo from 'shared/assets/icons/logo.svg'
 import Profile from 'shared/assets/icons/profile.svg'
 import Cart from 'shared/assets/icons/telejka.svg'
 import {Search} from "widgets/Search";
-
+import {Link} from "react-router-dom";
 
 
 interface NavbarProps {
@@ -16,7 +16,9 @@ export const Navbar: React.FC<NavbarProps> = ({className}) => {
     return (
         <div className={classNames(cls.Navbar, {}, [className])}>
             <div className={classNames(cls.NavbarLeft, {}, [className])}>
+                <Link to="/"> 
                 <Logo/>
+                </Link>
                 <div className={classNames(cls.NavbarLeftContent, {}, [className])}>
 
                     <div className={classNames(cls.NavbarTitle, {}, [className])}>
@@ -40,7 +42,9 @@ export const Navbar: React.FC<NavbarProps> = ({className}) => {
                 <div className={classNames(cls.NavbarRightBtn, {}, [className])}>
                     {/*<div>{totalPrice}</div>*/}
                     <div>123</div>
+                    <Link to="/cart">
                     <Cart/>
+                    </Link>
                     {/*<div>{totalCount}</div>*/}
                     <div>123</div>
                 </div>
