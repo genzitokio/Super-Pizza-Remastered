@@ -17,11 +17,12 @@
   padding-left: 10px;
 }
 
+
+
 .NavbarRight {
   display: flex;
   align-items: center;
 }
-
 .NavbarRightBtn {
 
   display: flex;
@@ -29,18 +30,21 @@
   justify-content: center;
   width: 150px;
   height: 50px;
-  background: #FFDC5E;
   border-radius: 30px;
   margin-left: 30px;
   border: none;
-  transition: background 0.2s ease, color 0.2s ease;
+  transition: background 0.2s ease;
   margin-bottom: 10px;
+  background: var(--button-color);
 }
+
+
+
 .NavbarTitle {
   font-weight: 800;
 }
 .NavbarSubtitle {
-  color: #929292;
+  color: #4b4b4b;
 
 }
 
