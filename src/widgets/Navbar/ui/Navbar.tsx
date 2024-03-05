@@ -20,6 +20,8 @@ export const Navbar: React.FC<NavbarProps> = ({className}) => {
     const {theme} = useTheme();
     const { t } = useTranslation();
 
+
+
     return (
         <div className={classNames(cls.Navbar, {}, [className])}>
             <div className={classNames(cls.NavbarLeft, {}, [className])}>
@@ -40,7 +42,6 @@ export const Navbar: React.FC<NavbarProps> = ({className}) => {
 
             {/*<Search  searchValue={searchValue} setSearchValue={setSearchValue}/>*/}
             <Search/>
-
 
             <ThemeSwitcher/>
             <LangSwitcher/>

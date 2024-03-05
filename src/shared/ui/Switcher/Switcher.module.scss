@@ -1,10 +1,20 @@
-input[type=checkbox]{
+.SwitcherInput {
   height: 0;
   width: 0;
   visibility: hidden;
 }
 
-label {
+.SwitcherInput:checked + label {
+  background: #444444;
+}
+
+.SwitcherInput:checked + label:after {
+  left: calc(100% - 1.25px); /* Уменьшаем отступ в два раза */
+  transform: translateX(-100%);
+}
+
+
+.SwitcherLabel {
   cursor: pointer;
   text-indent: -9999px;
   width: 50px; /* Уменьшаем ширину в два раза */
@@ -15,7 +25,7 @@ label {
   position: relative;
 }
 
-label:after {
+.SwitcherLabel:after {
   content: '';
   position: absolute;
   top: 1.25px; /* Уменьшаем отступ в два раза */
@@ -27,15 +37,14 @@ label:after {
   transition: 0.3s;
 }
 
-input:checked + label {
-  background: #444444;
-}
-
-input:checked + label:after {
-  left: calc(100% - 1.25px); /* Уменьшаем отступ в два раза */
-  transform: translateX(-100%);
-}
-
-label:active:after {
+.SwitcherLabel:active:after {
   width: 32.5px; /* Уменьшаем ширину в два раза */
+}
+
+.SwitcherLabelLeft {
+
+}
+
+.SwitcherLabelRight {
+
 }

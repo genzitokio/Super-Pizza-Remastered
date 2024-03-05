@@ -26,7 +26,7 @@ export const Search: React.FC<SearchProps> = ({searchValue, setSearchValue}) => 
     }
 
     return (
-        <div className="header__search-container">
+       <>
             <input
                 ref={inputRef}
                 value={searchValue || ''}
@@ -38,6 +38,6 @@ export const Search: React.FC<SearchProps> = ({searchValue, setSearchValue}) => 
             {searchValue && (
                 <Clear onClick={onClickClear}/>
             )}
-        </div>
+       </>
     );
 };

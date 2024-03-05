@@ -1,7 +1,6 @@
 import React from 'react';
 import {useTheme} from "app/providers/ThemeProvider/lib/useTheme";
-import './ThemeSwitcher.scss'
-import { classNames } from 'shared/lib/classNames/classNames';
+import Switcher from "shared/ui/Switcher/Switcher";
 
 
 interface ThemeSwitcherProps {
@@ -17,13 +16,14 @@ export const ThemeSwitcher = ({className}: ThemeSwitcherProps) => {
 
     return (
         <>
-            <input
-                type="checkbox"
-                id="switch"
-                onChange={handleInputChange} // Обработчик изменения состояния чекбокса
-                checked={theme === 'dark'} // Установка состояния чекбокса в зависимости от текущей темы
+            <Switcher
+                id='switch'
+                checked={theme === 'dark'}
+                onChange={handleInputChange}
+                labelLeft='light'
+                labelRight='dark'
             />
-            <label htmlFor="switch">Toggle</label>
-            </>
+
+        </>
     );
 };
