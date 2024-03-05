@@ -3,7 +3,11 @@
   "Перевод": "Translate",
   "Самая вкусная пицца во вселенной": "best pizza in the universe",
   "Поиск пиццы...": "Search Pizza...",
-  "ru": "eng"
+  "ru ": "ru ",
+  "en ": "en ",
+  "РЕАКТ ПИЦЦА": "REACT PIZZA",
+  "темная": "dark",
+  "светлая ": "light "
 }
 
 

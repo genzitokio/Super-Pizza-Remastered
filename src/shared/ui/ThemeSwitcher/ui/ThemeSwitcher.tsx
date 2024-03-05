@@ -1,6 +1,7 @@
 import React from 'react';
 import {useTheme} from "app/providers/ThemeProvider/lib/useTheme";
 import Switcher from "shared/ui/Switcher/Switcher";
+import {useTranslation} from "react-i18next";
 
 
 interface ThemeSwitcherProps {
@@ -9,6 +10,8 @@ interface ThemeSwitcherProps {
 
 export const ThemeSwitcher = ({className}: ThemeSwitcherProps) => {
     const {theme, toggleTheme} = useTheme();
+    const { t } = useTranslation();
+
 
     const handleInputChange = () => {
         toggleTheme();
@@ -20,8 +23,8 @@ export const ThemeSwitcher = ({className}: ThemeSwitcherProps) => {
                 id='switch'
                 checked={theme === 'dark'}
                 onChange={handleInputChange}
-                labelLeft='light'
-                labelRight='dark'
+                labelLeft={t('темная')}
+                labelRight={t('светлая ')}
             />
 
         </>

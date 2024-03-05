@@ -15,22 +15,12 @@ export const LangSwitcher = ({className, short}: LangSwitcherProps) => {
     };
 
     return (
-
-
-        <>
             <Switcher
-
                 id='language-toggle'
                 checked={i18n.language === 'en'}
                 onChange={toggle}
-                labelLeft='ru'
-                labelRight='en'
-
-
+                labelLeft={t('ru ')}
+                labelRight={t('en ')}
             />
-
-
-        </>
-
     );
 };

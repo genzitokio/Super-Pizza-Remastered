@@ -25,8 +25,7 @@ const Switcher: React.FC<SwitcherProps> = (
     const {theme} = useTheme();
 
     return (
-        <div
-        >
+        <div className={classNames(cls.SwitcherBlock, {}, [theme])}>
             <input
                 className={classNames(cls.SwitcherInput, {}, [theme])}
                 type="checkbox"
@@ -40,7 +39,7 @@ const Switcher: React.FC<SwitcherProps> = (
             <span
                 className={classNames(cls.SwitcherLabelLeft, {}, [theme])}
             >{labelRight}</span>
-            <span
+             <span
                 className={classNames(cls.SwitcherLabelRight, {}, [theme])}
             >{labelLeft}</span>
         </div>
