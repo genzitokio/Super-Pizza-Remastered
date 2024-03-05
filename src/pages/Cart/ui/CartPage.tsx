@@ -1,6 +1,6 @@
 import CartImage from 'shared/assets/icons/telejka.svg';
 import Bucket from 'shared/assets/icons/bucket.svg';
-import cls from './CartPage.module.scss';
+import './CartPage.scss';
 
 const CartPage = () =>
 
@@ -17,7 +17,7 @@ const CartPage = () =>
 // if (!totalPrice) {
 //     return <EmptyCart/>
 // }
-
+    // eslint-disable-next-line implicit-arrow-linebreak
     (
         <div className="wrapper">
             <div className="cart">
@@ -57,10 +57,10 @@ const CartPage = () =>
                     </div>
                 </div>
                 <div className="cart-nav">
-                    <button className="cart-nav__backbutton">
+                    <button type="button" className="cart-nav__backbutton">
                         Вернуться в магазин
                     </button>
-                    <button className="cart-nav__nextbutton">
+                    <button type="button" className="cart-nav__nextbutton">
                         Оформить заказ
                     </button>
 

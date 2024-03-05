@@ -8,3 +8,10 @@
     color: var(--primary-color);
     transition: background 0.2s ease, color 0.2s ease;
 }
+
+.content-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
