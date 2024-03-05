@@ -13,7 +13,6 @@ label {
   display: block;
   border-radius: 25px; /* Уменьшаем радиус закругления в два раза */
   position: relative;
-  left: -27px;
 }
 
 label:after {
@@ -29,7 +28,7 @@ label:after {
 }
 
 input:checked + label {
-  background: #bada55;
+  background: #444444;
 }
 
 input:checked + label:after {

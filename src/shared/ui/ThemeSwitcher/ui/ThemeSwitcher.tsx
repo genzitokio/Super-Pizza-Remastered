@@ -1,6 +1,8 @@
 import React from 'react';
 import {useTheme} from "app/providers/ThemeProvider/lib/useTheme";
 import './ThemeSwitcher.scss'
+import { classNames } from 'shared/lib/classNames/classNames';
+
 
 interface ThemeSwitcherProps {
     className?: string;
