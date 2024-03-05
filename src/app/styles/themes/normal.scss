@@ -1,16 +1,11 @@
 :root {
-  --bg-color: #ffffff;
-  --primary-color: #000000;
-  --secondary-color: #0449e0;
-  --button-color: #ff9735;
-
-
+    --bg-color: #fff;
+    --primary-color: #000;
+    --secondary-color: #0449e0;
+    --button-color: #ff9735;
 }
 
 .app {
-  font: var(--font-m);
-  min-height: 100vh;
+    font: var(--font-m);
+    min-height: 100vh;
 }
-
-
-

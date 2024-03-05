@@ -3,12 +3,8 @@
 @import "themes/normal";
 @import "themes/dark";
 
-
-
 .app {
-  background: var(--bg-color);
-  color: var(--primary-color);
-  transition: background 0.2s ease, color 0.2s ease;
+    background: var(--bg-color);
+    color: var(--primary-color);
+    transition: background 0.2s ease, color 0.2s ease;
 }
-
-

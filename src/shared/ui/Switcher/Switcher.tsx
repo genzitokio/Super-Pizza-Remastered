@@ -1,7 +1,7 @@
-import React, {ChangeEventHandler, MouseEventHandler} from 'react';
-import cls from './Switcher.module.scss'
-import {classNames} from "shared/lib/classNames/classNames";
-import {useTheme} from "app/providers/ThemeProvider";
+import React, { ChangeEventHandler, MouseEventHandler } from 'react';
+import { classNames } from 'shared/lib/classNames/classNames';
+import { useTheme } from 'app/providers/ThemeProvider';
+import cls from './Switcher.module.scss';
 
 interface SwitcherProps {
     id?: string,
@@ -19,10 +19,10 @@ const Switcher: React.FC<SwitcherProps> = (
         onChange,
         onClick,
         labelLeft,
-        labelRight
-    }) => {
-
-    const {theme} = useTheme();
+        labelRight,
+    },
+) => {
+    const { theme } = useTheme();
 
     return (
         <div className={classNames(cls.SwitcherBlock, {}, [theme])}>
@@ -35,13 +35,20 @@ const Switcher: React.FC<SwitcherProps> = (
             />
             <label
                 className={classNames(cls.SwitcherLabel, {}, [theme])}
-                htmlFor={id}>Toggle</label>
+                htmlFor={id}
+            >
+                Toggle
+            </label>
             <span
                 className={classNames(cls.SwitcherLabelLeft, {}, [theme])}
-            >{labelRight}</span>
-             <span
+            >
+                {labelRight}
+            </span>
+            <span
                 className={classNames(cls.SwitcherLabelRight, {}, [theme])}
-            >{labelLeft}</span>
+            >
+                {labelLeft}
+            </span>
         </div>
     );
 };

@@ -1,77 +1,72 @@
 .empty {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 103px;
-  margin-left: 30px;
-
-  &-inner {
-
-
-    &__title {
-      color: black;
-      font-size: 32px;
-      font-family: Roboto;
-      font-weight: 700;
-      letter-spacing: 0.32px;
-      word-wrap: break-word;
-    }
-
-    &__subtitle {
-      margin-top: 20px;
-      text-align: center;
-      color: #777777;
-      font-size: 18px;
-      font-family: Roboto;
-      font-weight: 400;
-      line-height: 26.17px;
-      letter-spacing: 0.18px;
-      word-wrap: break-word;
-    }
-
-    &__img {
-      position: relative;
-      top: 45px;
-      width: 300px;
-      height: 300px;
-    }
-  }
-
-  &-buttons {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 103px;
+    margin-left: 30px;
 
-    &__back,
-    &__repeat,
-    &__play {
-      background: #ff8042;
-      border-radius: 30px;
-      width: 210px;
-      height: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-      font-size: 16px;
-      font-family: Roboto;
-      font-weight: 700;
-      letter-spacing: 0.18px;
-      text-align: center;
-      color: white;
-      border: none;
-      padding: 30px;
+    &-inner {
+        &__title {
+            color: black;
+            font-size: 32px;
+            font-family: Roboto;
+            font-weight: 700;
+            letter-spacing: 0.32px;
+            word-wrap: break-word;
+        }
 
-      &:hover {
-        background-color: #FE5F1E; // Изменение цвета фона при наведении
-        transform: scale(1.05); // Немного увеличиваем размер при наведении
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); // Добавляем тень при наведении
-      }
+        &__subtitle {
+            margin-top: 20px;
+            text-align: center;
+            color: #777;
+            font-size: 18px;
+            font-family: Roboto;
+            font-weight: 400;
+            line-height: 26.17px;
+            letter-spacing: 0.18px;
+            word-wrap: break-word;
+        }
+
+        &__img {
+            position: relative;
+            top: 45px;
+            width: 300px;
+            height: 300px;
+        }
     }
 
+    &-buttons {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 40px;
 
-  }
+        &__back,
+        &__repeat,
+        &__play {
+            background: #ff8042;
+            border-radius: 30px;
+            width: 210px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            font-size: 16px;
+            font-family: Roboto;
+            font-weight: 700;
+            letter-spacing: 0.18px;
+            text-align: center;
+            color: white;
+            border: none;
+            padding: 30px;
 
+            &:hover {
+                background-color: #fe5f1e; // Изменение цвета фона при наведении
+                transform: scale(1.05); // Немного увеличиваем размер при наведении
+                box-shadow: 0 0 10px rgb(0 0 0 / 30%); // Добавляем тень при наведении
+            }
+        }
+    }
 }

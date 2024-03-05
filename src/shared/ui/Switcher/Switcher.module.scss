@@ -1,48 +1,47 @@
 .SwitcherBlock {
-  width: 130px;
+    width: 130px;
 }
 
 .SwitcherInput {
-  height: 0;
-  width: 0;
-  visibility: hidden;
+    height: 0;
+    width: 0;
+    visibility: hidden;
 }
 
 .SwitcherInput:checked + label {
-  background: #444444;
+    background: #444;
 }
 
-.SwitcherInput:checked + label:after {
-  left: calc(100% - 1.25px); /* Уменьшаем отступ в два раза */
-  transform: translateX(-100%);
+.SwitcherInput:checked + label::after {
+    left: calc(100% - 1.25px); /* Уменьшаем отступ в два раза */
+    transform: translateX(-100%);
 }
-
 
 .SwitcherLabel {
-  cursor: pointer;
-  text-indent: -9999px;
-  width: 50px; /* Уменьшаем ширину в два раза */
-  height: 25px; /* Уменьшаем высоту в два раза */
-  background: grey;
-  display: block;
-  border-radius: 25px; /* Уменьшаем радиус закругления в два раза */
-  position: relative;
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 50px; /* Уменьшаем ширину в два раза */
+    height: 25px; /* Уменьшаем высоту в два раза */
+    background: grey;
+    display: block;
+    border-radius: 25px; /* Уменьшаем радиус закругления в два раза */
+    position: relative;
 }
 
-.SwitcherLabel:after {
-  content: '';
-  position: absolute;
-  top: 1.25px; /* Уменьшаем отступ в два раза */
-  left: 1.25px; /* Уменьшаем отступ в два раза */
-  width: 22.5px; /* Уменьшаем ширину в два раза */
-  height: 22.5px; /* Уменьшаем высоту в два раза */
-  background: #fff;
-  border-radius: 22.5px; /* Уменьшаем радиус закругления в два раза */
-  transition: 0.3s;
+.SwitcherLabel::after {
+    content: "";
+    position: absolute;
+    top: 1.25px; /* Уменьшаем отступ в два раза */
+    left: 1.25px; /* Уменьшаем отступ в два раза */
+    width: 22.5px; /* Уменьшаем ширину в два раза */
+    height: 22.5px; /* Уменьшаем высоту в два раза */
+    background: #fff;
+    border-radius: 22.5px; /* Уменьшаем радиус закругления в два раза */
+    transition: 0.3s;
 }
 
-.SwitcherLabel:active:after {
-  width: 32.5px; /* Уменьшаем ширину в два раза */
+.SwitcherLabel:active::after {
+    width: 32.5px; /* Уменьшаем ширину в два раза */
 }
 
 .SwitcherLabelLeft {
