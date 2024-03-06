@@ -3,7 +3,8 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import { useTheme } from 'app/providers/ThemeProvider';
 import cls from './Switcher.module.scss';
 
-interface SwitcherProps {
+// Экспорт интерфейса пропсов SwitcherProps
+export interface SwitcherProps {
     id?: string,
     checked?: boolean,
     onChange?: ChangeEventHandler<HTMLInputElement>,
@@ -12,7 +13,8 @@ interface SwitcherProps {
     onClick?: MouseEventHandler<HTMLInputElement>;
 }
 
-const Switcher: React.FC<SwitcherProps> = (
+// Экспорт компонента Switcher
+export const Switcher: React.FC<SwitcherProps> = (
     {
         id,
         checked,
@@ -53,4 +55,4 @@ const Switcher: React.FC<SwitcherProps> = (
     );
 };
 
-export default Switcher;
+export default Switcher; // Экспорт компонента по умолчанию
