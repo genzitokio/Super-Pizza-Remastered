@@ -3,6 +3,10 @@
 @import "themes/normal";
 @import "themes/dark";
 
+a {
+    text-decoration: none;
+}
+
 .app {
     background: var(--bg-color);
     color: var(--primary-color);

@@ -1,13 +1,14 @@
 {
   "Тестовый пример": "Test example",
   "Перевод": "Translate",
-  "Самая вкусная пицца во вселенной": "best pizza in the universe",
+  "Самая вкусная пицца": "Best pizza",
   "Поиск пиццы...": "Search Pizza...",
   "ru ": "ru ",
   "en ": "en ",
   "РЕАКТ ПИЦЦА": "REACT PIZZA",
   "темная": "dark",
-  "светлая ": "light "
+  "светлая ": "light ",
+  "Профиль": "Profile"
 }
 
 

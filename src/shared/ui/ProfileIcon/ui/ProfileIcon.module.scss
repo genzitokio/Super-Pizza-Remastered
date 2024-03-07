@@ -1,0 +1,16 @@
+.ProfileBlock {
+    width: 100px;
+    padding: 10px 20px; /* Добавляем отступы внутри кнопки */
+    font-size: 16px; /* Устанавливаем размер шрифта */
+    border: none; /* Удаляем границу кнопки */
+    background-color: var(--button-color2); /* Задаем цвет фона кнопки */
+    color: #fff; /* Задаем цвет текста кнопки */
+    cursor: pointer; /* Устанавливаем курсор при наведении на кнопку */
+    border-radius: 15px; /* Добавляем закругленные углы */
+    transition: background-color 0.3s, color 0.3s; /* Добавляем плавное изменение цвета при наведении */
+    margin-right: 10px;
+}
+
+.ProfileBlock:hover {
+    opacity: 0.8;
+}

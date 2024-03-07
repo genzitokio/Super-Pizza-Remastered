@@ -1,0 +1,18 @@
+.NavbarLeft {
+    display: flex;
+    width: 345px;
+}
+
+.NavbarLeftContent {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.NavbarTitle {
+    font-weight: 800;
+}
+
+.NavbarSubtitle {
+    color: #4b4b4b;
+}

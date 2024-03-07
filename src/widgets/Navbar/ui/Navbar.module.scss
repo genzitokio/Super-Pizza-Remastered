@@ -6,17 +6,6 @@
     font-size: 20px;
 }
 
-.NavbarLeft {
-    display: flex;
-    width: 345px;
-}
-
-.NavbarLeftContent {
-    display: flex;
-    flex-direction: column;
-    padding-left: 10px;
-}
-
 .NavbarRight {
     display: flex;
     align-items: center;
@@ -29,17 +18,6 @@
     width: 150px;
     height: 50px;
     border-radius: 30px;
-    margin-left: 30px;
     border: none;
-    transition: background 0.2s ease;
-    margin-bottom: 10px;
     background: var(--button-color);
-}
-
-.NavbarTitle {
-    font-weight: 800;
-}
-
-.NavbarSubtitle {
-    color: #4b4b4b;
 }
