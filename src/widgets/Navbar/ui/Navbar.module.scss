@@ -4,6 +4,9 @@
     align-items: center;
     font-family: "Roboto Condensed", sans-serif;
     font-size: 20px;
+    gap: 10px;
+    padding: 12px;
+    background: var(--widget-bg-color);
 }
 
 .NavbarRight {
@@ -20,4 +23,11 @@
     border-radius: 30px;
     border: none;
     background: var(--button-color);
+}
+.NavbarTitleBlock {
+
+}
+.NavbarRightBlock {
+    display: flex;
+    gap: 15px;
 }

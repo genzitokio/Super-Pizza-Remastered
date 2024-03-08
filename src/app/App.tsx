@@ -4,6 +4,7 @@ import { Navbar } from 'widgets/Navbar';
 import { AppRouter } from 'app/providers/router';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTheme } from 'app/providers/ThemeProvider';
+import { Sidebar } from 'widgets/Sidebar/ui/Sidebar';
 
 const App = () => {
     const { theme } = useTheme();
@@ -13,6 +14,7 @@ const App = () => {
             <Suspense fallback="">
                 <Navbar />
                 <div className="content-page">
+                    <Sidebar />
                     <AppRouter />
                 </div>
             </Suspense>
